@@ -1,0 +1,222 @@
+.container-header {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 75px;
+}
+
+/* ----------------Header---------------- */
+#header-section {
+  padding: 32px 0;
+  background-color: #1c1814;
+}
+.header,
+.header-nav,
+.header-nav__list,
+.header-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  flex-grow: 1;
+}
+
+.header-nav__list {
+  gap: 48px;
+  font-weight: 400;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.header-nav__link {
+  transition: color 0.3s ease;
+}
+
+.header-nav__link:hover,
+.header-action_search:hover,
+.header-action_cart:hover {
+  color: #c99e71;
+}
+
+.header-nav__link-active {
+  color: #c99e71;
+  font-weight: 700;
+  cursor: default;
+}
+
+.header-action {
+  margin-left: 48px;
+  gap: 50px;
+}
+
+.header-action_search,
+.header-action_cart {
+  font-size: 30px;
+  transition: color 0.3s ease;
+}
+/* ----------------/Header---------------- */
+/* -----------------Hero------------------ */
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 75px;
+}
+#hero {
+  background-image: url("./img/banner.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 147px 0 166px 0;
+}
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-info {
+  max-width: 530px;
+}
+.hero-title {
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 130%;
+  font-family: "Righteous", Arial, Helvetica, sans-serif;
+}
+.hero-text {
+  margin-bottom: 64px;
+  font-size: 20px;
+  line-height: 180%;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
+}
+.hero-btn {
+  padding: 24px 40px;
+}
+.btn-primary {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #c99e71;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+}
+.btn-primary:hover {
+  background-color: #a27d55;
+}
+.hero-video__btn {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  align-self: flex-end;
+  height: 110px;
+  font-weight: 400;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+.hero-video__btn:hover {
+  color: #c99e71;
+}
+.hero-video__btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  width: 66px;
+  height: 66px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: url("./img/play.svg") 50%/14px 18px no-repeat;
+  transform: translateX(-50%);
+}
+/* -----------------/Hero------------------ */
+/* -----------------Features--------------- */
+#features {
+  padding-top: 140px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+}
+.features-item {
+  width: calc((100% - 72px) / 3);
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Righteous", Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+.features-item_dark {
+  margin-right: 12px;
+  color: #c99e71;
+}
+.features-img {
+  margin-top: 24px;
+}
+/* -----------------/Features--------------- */
+/* -----------------Story------------------- */
+#story {
+  padding-top: 140px;
+}
+.story-content {
+  display: flex;
+  gap: 32px;
+}
+.story-wrap {
+  width: 50%;
+  display: flex;
+  gap: 32px;
+}
+.story-double__img {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 32px;
+}
+.story-double__img img {
+  max-width: 298px;
+  max-height: 301px;
+}
+.story-content__text {
+  width: 50%;
+  padding: 120px 56px 56px 56px;
+  background-color: #1c1814;
+}
+.story-title {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #c99e71;
+}
+.story-subtitle {
+  max-width: 398px;
+  margin-bottom: 36px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 130%;
+  color: #fff;
+  font-family: "Righteous", Arial, Helvetica, sans-serif;
+}
+.story-text {
+  max-width: 398px;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
+}
+/* -----------------/Story------------------- */
