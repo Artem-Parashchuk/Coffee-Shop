@@ -37,6 +37,11 @@
     <header id="header-section">
       <div class="container-header">
         <div class="header">
+          <div class="mobile-menu__icon">
+            <button class="mobile-menu__btn">
+              <span class="menu-span"></span>
+            </button>
+          </div>
           <nav class="header-nav">
             <ul class="header-nav__list">
               <li class="header-nav__item">
@@ -169,16 +174,20 @@
           <div class="story-content">
             <div class="story-wrap">
               <div class="story-double__img">
-                <img
-                  src="./img/feature-1.jpg"
-                  alt="Cup of coffee"
-                />
-                <img
-                  src="./img/feature-2.jpg"
-                  alt="Cup of coffee"
-                />
+                <div class="double-img__wrap">
+                  <img
+                    src="./img/feature-1.jpg"
+                    alt="Cup of coffee"
+                  />
+                </div>
+                <div class="double-img__wrap">
+                  <img
+                    src="./img/feature-2.jpg"
+                    alt="Cup of coffee"
+                  />
+                </div>
               </div>
-              <div>
+              <div class="second-img__wrap">
                 <img
                   src="./img/feature-4.jpg"
                   alt="Two cups of coffee"
@@ -516,8 +525,10 @@
                       alt="John Smith"
                     />
                   </div>
-                  <p class="person-name">John Smith</p>
-                  <p class="person-position">Product Designer</p>
+                  <div>
+                    <p class="person-name">John Smith</p>
+                    <p class="person-position">Product Designer</p>
+                  </div>
                 </div>
                 <div class="testimonial-person__description">
                   <p class="testimonial-person__text text">
@@ -568,8 +579,10 @@
                       alt="Brett Lee"
                     />
                   </div>
-                  <p class="person-name">Brett Lee</p>
-                  <p class="person-position">UI / UX Designer</p>
+                  <div>
+                    <p class="person-name">Brett Lee</p>
+                    <p class="person-position">UI / UX Designer</p>
+                  </div>
                 </div>
                 <div class="testimonial-person__description">
                   <p class="testimonial-person__text text">
@@ -820,8 +833,14 @@
             </li>
           </ul>
           <form class="footer-form">
-            <input type="email" placeholder="Enter your email"/>
-            <button type="submit" class="footer-form__btn">
+            <input
+              type="email"
+              placeholder="Enter your email"
+            />
+            <button
+              type="submit"
+              class="footer-form__btn"
+            >
               <span class="material-symbols-outlined"> arrow_forward </span>
             </button>
           </form>
@@ -834,5 +853,9 @@
         </p>
       </div>
     </footer>
+
+    <div class="mobile-menu__wrap">
+      <div class="mobile-menu"></div>
+    </div>
   </body>
 </html>
