@@ -328,9 +328,6 @@
   }
 }
 @media (max-width: 767.98px) and (min-width: 425px) {
-  .container {
-    padding: 0 35px;
-  }
   #hero {
     padding: 50px 0 60px 0;
     background-position: 89% 100%;
@@ -738,8 +735,6 @@
     justify-content: center;
     gap: 36px;
   }
-  .product-link {
-  }
 }
 @media (max-width: 767.98px) and (min-width: 425px) {
   #product {
@@ -1003,7 +998,7 @@
     font-size: 35px;
   }
   .menu-list {
-    gap: 35px;
+    gap: 20px;
   }
   .menu-item {
     max-width: 100%;
@@ -1235,6 +1230,76 @@
   max-width: 202px;
   padding: 20px 36px;
 }
+@media (max-width: 1023.98px) and (min-width: 768px) {
+  #reservation {
+    padding: 50px 0 100px 0;
+  }
+  .reservation-wrapper {
+    flex-direction: column;
+  }
+  .reservation-map {
+    width: 100%;
+    height: 420px;
+  }
+  .reservation-right-side {
+    width: 100%;
+    padding: 50px;
+    /* height: 400px; */
+  }
+}
+@media (max-width: 767.98px) and (min-width: 425px) {
+  #reservation {
+    padding: 50px 0 50px 0;
+  }
+  .reservation-wrapper {
+    flex-direction: column;
+  }
+  .reservation-map {
+    width: 100%;
+    height: 270px;
+  }
+  .reservation-right-side {
+    width: 100%;
+    padding: 20px 15px;
+  }
+  .reservation-title {
+    margin-bottom: 25px;
+    font-size: 40px;
+  }
+  .form-btn {
+    margin: 30px auto 0;
+    padding: 15px 20px;
+  }
+}
+@media (max-width: 424.98px) and (min-width: 320px) {
+  #reservation {
+    padding: 50px 0 50px 0;
+  }
+  .reservation-wrapper {
+    flex-direction: column;
+  }
+  .reservation-map {
+    width: 100%;
+    height: 270px;
+  }
+  .reservation-right-side {
+    width: 100%;
+    padding: 15px 10px;
+  }
+  .reservation-title {
+    margin-bottom: 25px;
+    font-size: 36px;
+  }
+  .reservation-form input {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  .form-btn {
+    margin: 15px auto 0;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+}
 /* --------------------/Reservation-------------- */
 /* --------------------News---------------------- */
 #news {
@@ -1299,6 +1364,77 @@
 }
 .new-btn:hover {
   color: #a27d55;
+}
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+  .news-item {
+    max-width: 302px;
+  }
+  .news-wrapper__img img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 1023.98px) and (min-width: 768px) {
+  #news {
+    margin-bottom: 100px;
+  }
+  .news-list {
+    justify-content: center;
+  }
+  .news-item {
+    max-width: 218px;
+  }
+  .news-wrapper__img img {
+    max-width: 100%;
+  }
+  .news-description {
+    padding: 10px 10px 15px;
+  }
+}
+@media (max-width: 767.98px) and (min-width: 425px) {
+  #news {
+    margin-bottom: 50px;
+  }
+  .news-list {
+    justify-content: center;
+  }
+  .news-item {
+    max-width: 315px;
+  }
+  .news-title {
+    margin-bottom: 25px;
+    font-size: 40px;
+  }
+  .news-wrapper__img img {
+    max-width: 100%;
+  }
+  .news-description {
+    padding: 10px 10px 15px;
+  }
+}
+@media (max-width: 424.98px) and (min-width: 320px) {
+  #news {
+    margin-bottom: 50px;
+  }
+  .news-list {
+    justify-content: center;
+    gap: 20px;
+  }
+  .news-item {
+    max-width: 315px;
+  }
+  .news-title {
+    margin-bottom: 25px;
+    font-size: 40px;
+  }
+  .news-wrapper__img img {
+    max-width: 100%;
+  }
+  .news-description {
+    padding: 10px 10px 15px;
+  }
+  .news-text {
+    margin-bottom: 15px;
+  }
 }
 /* --------------------/News---------------------- */
 /* --------------------Footer--------------------- */
@@ -1371,4 +1507,37 @@
   line-height: 180%;
   color: #fff;
 }
+@media (max-width: 1023.98px) and (min-width: 768px) {
+  .footer-top {
+    padding-bottom: 50px;
+  }
+  .footer-nav__list{
+    gap: 20px;
+  }
+}
+@media (max-width: 767.98px) and (min-width: 425px) {
+  .footer-top {
+    padding-bottom: 30px;
+  }
+  .footer-nav__list{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+@media (max-width: 424.98px) and (min-width: 320px) {
+  .footer-top {
+    padding-bottom: 30px;
+  }
+  .footer-nav__list{
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  .footer-form {
+    display: none;
+  }
+  .footer-bottom__text {
+    padding: 15px 0;
+  }
+}
+
 /* --------------------/Footer--------------------- */
