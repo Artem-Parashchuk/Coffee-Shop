@@ -191,7 +191,6 @@
           </button>
         </div>
       </div>
-
     </header>
 
     <main>
@@ -736,21 +735,30 @@
               <p class="reservation-subtitle subtitle">Reservation</p>
               <h2 class="reservation-title title">Booking a table</h2>
               <form class="reservation-form">
-                <input
-                  type="text"
-                  placeholder="Name"
-                  class=""
-                />
-                <input
-                  type="email"
-                  placeholder="Email"
-                  class=""
-                />
-                <input
-                  type="tel"
-                  placeholder="Phone"
-                  class=""
-                />
+                <div class="input-name__wrap">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    class="reservation-name"
+                  />
+                  <p class="error-name">Name is not correct</p>
+                </div>
+                <div class="input-email__wrap">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="reservation-email"
+                  />
+                  <p class="error-email">Email is not correct</p>
+                </div>
+                <div class="input-phone__wrap">
+                  <input
+                    type="tel"
+                    placeholder="Phone"
+                    class="reservation-phone"
+                  />
+                  <p class="error-phone">Phone is not correct</p>
+                </div>
                 <button
                   type="submit"
                   class="form-btn btn-primary"
@@ -847,7 +855,7 @@
             <li class="footer-nav__item">
               <a
                 class="footer-nav__link"
-                href=""
+                href="#header-section"
               >
                 <img
                   src="./img/logo.svg"
@@ -907,10 +915,13 @@
             </li>
           </ul>
           <form class="footer-form">
-            <input
+            <div class="footer-email">
+              <input class="footer-email__input"
               type="email"
               placeholder="Enter your email"
-            />
+              />
+              <p class="footer-error__email">Email is not correct</p>
+            </div>
             <button
               type="submit"
               class="footer-form__btn"
@@ -929,5 +940,6 @@
     </footer>
 
     <script src="./script.js"></script>
+    <script src="./form.js"></script>
   </body>
 </html>

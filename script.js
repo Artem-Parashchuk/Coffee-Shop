@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       }
   
- 
       if (mobileMenu) {
         mobileMenu.classList.remove('active');
       }

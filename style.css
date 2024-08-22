@@ -119,7 +119,7 @@ html {
     width: 40px;
     height: 35px;
     cursor: pointer;
-    transition: background-color .25s ease;
+    transition: background-color 0.25s ease;
   }
 
   .menu-span {
@@ -259,7 +259,7 @@ html {
     bottom: 12px;
   }
   .menu-span::after {
-    top: 9px;
+    top: 12px;
   }
   .header-action {
     margin-top: 20px;
@@ -418,12 +418,12 @@ html {
     background-position: 89% 100%;
   }
   .hero-video__btn::before {
-    top: 44px;
+    top: 12px;
     width: 70px;
     height: 70px;
   }
   .hero-video__btn {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
 }
 @media (max-width: 767.98px) and (min-width: 425px) {
@@ -1322,7 +1322,24 @@ html {
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.8);
   border: none;
+  outline: none;
 }
+.input-name__wrap,
+.input-email__wrap,
+.input-phone__wrap {
+  position: relative;
+}
+.error-name,
+.error-email,
+.error-phone {
+  display: none;
+  position: absolute;
+  bottom: -13px;
+  left: 20px;
+  color: red;
+  font-size: 12px;
+}
+
 .form-btn {
   display: block;
   margin: 56px auto 0;
@@ -1606,34 +1623,62 @@ html {
   line-height: 180%;
   color: #fff;
 }
+.footer-email {
+  position: relative;
+}
+.footer-error__email{
+  display: none;
+  position: absolute;
+  bottom: -13px;
+  left: 20px;
+  color: red;
+  font-size: 12px;
+}
 @media (max-width: 1023.98px) and (min-width: 768px) {
   .footer-top {
     padding-bottom: 50px;
+    flex-wrap: wrap;
   }
-  .footer-nav__list{
+  .footer-nav__list {
     gap: 20px;
+  }
+  .footer-form {
+    margin: 25px auto 0;
   }
 }
 @media (max-width: 767.98px) and (min-width: 425px) {
   .footer-top {
     padding-bottom: 30px;
-  }
-  .footer-nav__list{
     flex-wrap: wrap;
+  }
+  .footer-nav__list {
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
+  }
+  .footer-form {
+    margin: 15px auto 0;
+  }
+  .footer-form input {
+    padding: 10px;
   }
 }
 @media (max-width: 424.98px) and (min-width: 320px) {
   .footer-top {
     padding-bottom: 30px;
+    flex-wrap: wrap;
   }
-  .footer-nav__list{
+  .footer-nav__list {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 25px;
   }
   .footer-form {
-    display: none;
+    margin: 15px auto 0;
+  }
+  .footer-form input {
+    padding: 10px;
+    font-size: 14px;
   }
   .footer-bottom__text {
     padding: 15px 0;
