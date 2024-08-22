@@ -338,6 +338,12 @@ html {
 .body-lock {
   overflow: hidden;
 }
+.header-mobile__action {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  gap: 20px;
+}
 /* ---------------- /Mobile menu----------- */
 /* ----------------/Header---------------- */
 /* -----------------Hero------------------ */

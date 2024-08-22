@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     BtnCloseMobMenu.addEventListener('click',  function closeMobMenu() {
       mobileMenu.classList.remove('active')
-      console.log('click')
+      body.classList.remove('body-lock');
     })
   }
 
