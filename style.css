@@ -1645,6 +1645,9 @@ html {
   .footer-form {
     margin: 25px auto 0;
   }
+  .footer-form__btn {
+    margin-left: auto;
+  }
 }
 @media (max-width: 767.98px) and (min-width: 425px) {
   .footer-top {
