@@ -1671,6 +1671,9 @@ html {
   .footer-form input {
     padding: 10px;
   }
+  .footer-form__btn {
+    margin-left: auto;
+  }
 }
 @media (max-width: 424.98px) and (min-width: 320px) {
   .footer-top {
@@ -1688,6 +1691,9 @@ html {
   .footer-form input {
     padding: 10px;
     font-size: 14px;
+  }
+  .footer-form__btn {
+    margin-left: auto;
   }
   .footer-bottom__text {
     padding: 15px 0;
